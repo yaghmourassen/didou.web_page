@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+#profile-pic {
+    width: 150px; /* Set appropriate size */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    display: block;
+    margin: 10px auto; /* Center the image */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+header button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #575757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #787878;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+    
+}
+
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a, #skills ul li {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block; /* Ensures the padding and hover cover the full area of the link */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect */
+nav ul li a:hover, #skills ul li:hover {
+    background-color: #575757; /* Darker shade for hover */
+    color: #FFF; /* Optional: change text color on hover */
+}
+
+/* Skill List Styling if it's a separate list from navigation */
+#skills ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+#skills ul li {
+    background-color: #333; /* Default background */
+    cursor: pointer; /* Indicates that the item is clickable */
+    margin-bottom: 5px; /* Space between items */
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.lang-ar {
+    direction: rtl;  /* Right-to-left layout */
+    text-align: right;
+}
+
+/* You might want to adjust padding, margins, or other properties for Arabic */
+.lang-ar nav ul {
+    justify-content: flex-end; /* Align navigation items to the right */
+}
+
+.lang-ar a {
+    text-decoration: none; /* Example to remove text decoration */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header, section, footer {
+        padding: 10px;
+    }
+}
+
+/* Dark Theme Styles */
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode footer,
+.dark-mode nav {
+    background-color: #222;
+}
+
+.dark-mode nav ul li a {
+    color: #ccc;
+}

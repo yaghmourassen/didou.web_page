@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaghmoracen's Professional Portfolio</title>
+    <link rel="stylesheet" href="didou.css">
+</head>
+<body>
+    <nav>
+        <ul>
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#education" id="nav-education">Education</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 id="name">Yaghmoracen</h1>
+    <img src="didou.jpg" alt="Yaghmoracen" id="profile-pic">
+    <p id="profession">Software Engineer from Algeria</p>
+    <button id="theme-toggle" onclick="document.body.classList.toggle('dark-mode');">Toggle Theme</button>
+    <button id="download-cv" onclick="location.href='url_to_your_cv.pdf';">Download My CV</button>
+    <button id="view-projects" onclick="location.href='./didoup.html';">My Projects</button>
+    <button id="change-language" onclick="changeLanguage()">Change Language</button>
+    </header>
+    <section id="about">
+        <h2 id="about-title">About Me</h2>
+        <p id="about-text">Passionate and professional in all aspects of computer technology with a degree in engineering from the College of Modern Information and Communication Technologies.</p>
+        <p id="certifications">Certified in Office programs including Word, Excel, and PowerPoint.</p>
+    </section>
+    <section id="skills">
+        <h2 id="skills-title">Skills</h2>
+        <ul>
+            <li id="skill-desktop" onclick="showDescription('desktop')">Desktop software development (C++, Java)</li>
+    <li id="skill-web" onclick="showDescription('web')">Web applications (HTML, CSS, JavaScript)</li>
+    <li id="skill-mobile" onclick="showDescription('mobile')">Mobile applications (Android Studio, Java)</li>
+    <li id="skill-uml" onclick="showDescription('uml')">UML application modeling and design</li>
+    <li id="skill-marketing" onclick="showDescription('marketing')">Digital marketing</li>
+    <li id="skill-hwsw" onclick="showDescription('hwsw')">Hardware and software expertise</li>
+    <li id="skill-multimedia" onclick="showDescription('multimedia')">Photo and video editing (Adobe Photoshop, Adobe Premiere)</li>
+        </ul>
+        <p id="skill-description"></p>
+    </section>
+    <section id="education">
+        <h2 id="education-title">Education</h2>
+        <p id="degree-info">License Degree and Master's Degree in Information Systems and Web Technologies.</p>
+    </section>
+    <footer>
+        <p id="contact-info">Contact me at <a href="mailto:example@example.com">example@example.com</a></p>
+    </footer>
+    <script src="didou.js"></script>
+</body>
+</html>
